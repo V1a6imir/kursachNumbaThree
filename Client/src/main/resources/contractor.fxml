@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kur3.client.controller.ClientContractorController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="showContractorsTable" prefHeight="200.0" prefWidth="354.0">
+               <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="75.0" text="Закзачик ID" />
+                  <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Наименование" />
+                  <TableColumn fx:id="objectIdColumn" prefWidth="75.0" text="ID ОКН" />
+               </columns>
+            </TableView>
+            <Button fx:id="backButton" layoutX="532.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButton" text="Назад" />
+            <TextField fx:id="contractorNameTextField" layoutX="14.0" layoutY="263.0" promptText="введите наименование..." />
+            <TextField fx:id="objectIdTextField" layoutX="14.0" layoutY="295.0" promptText="введите ID ОКН..." />
+            <Text layoutX="14.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить информацию об исполнителе" wrappingWidth="190.21630859375" />
+            <Button fx:id="addButton" layoutX="14.0" layoutY="328.0" mnemonicParsing="false" onAction="#addButton" text="Add" />
+            <TextField fx:id="contractorNameTextField1" layoutX="409.0" layoutY="263.0" promptText="измените наименование..." />
+            <TextField fx:id="objectIdTextField1" layoutX="409.0" layoutY="295.0" promptText="измените ID ОКН..." />
+            <Text layoutX="409.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменить информацию об исполнителе" wrappingWidth="190.21630859375" />
+            <Button fx:id="editButton" layoutX="409.0" layoutY="328.0" mnemonicParsing="false" onAction="#editButton" text="Edit" />
+            <Button fx:id="deleteButton" layoutX="301.0" layoutY="200.0" mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
